@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title>Successfully registered</title>
+      <style>
+        span {color: blue;}
+      </style>
+   </head>
+   
+   <body>
+   
+      <!-- Include _menu.html -->
+      <h2>QR code status </h2>
+      
+      <div th:if="${response != null}">
+         <img  src="data:image/png;charset=utf-8;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0AQAAAADjreInAAACyUlEQVR4Xu3aMXLbMBCFYWRSpPQRfBQcjTqaj6IjqGSRMcJ9WIDUWi42LvG/RsASH1LtgIRT2o/yKLGSCz5WcsHHSi74WMkFHyu54GMlF3ys5IKPlVzwsZILPlZywcdKLvhYyQXvg72csflnebOfuz9/lM0mM7+d4X2AP2Pz9Xz1kcjHLxv+Le/2c0weRsZmrd3wPXgf4Otnb6xjlTZTy7VW/vR1m3bebc0bHt+D98GT9/67Fes/PRmHGR6Pz3pb15/g8fjX3kfybW52pNq6bTyx4H2A9wH+jG1mR9bNW+6czODx+It/yj5bTt9PH3b/oMmX4GPFgq+refXfm73yKdVqN3WZNmt2mVe02JpxBu8D/Opep5SuvG0DXXnb91OftOn7l9WX8wuPX9kfD/xi4W6iXr+f5Gcz+hM8Hh+9Yq988zA7iLLpj7F778xtIPwY4Vf36jIn6rJj1V1W5Dy/dBmOx+On3/2TyV75bJWxTV73D+18/1Nn4nvwPsD3FzvLWNX8yKq2QDsX3Ux80394/MreZptPlD752oyv3v/wFb+294ttrVLGKfV0fjVDL/sPj2+reo9IOfPunanctdj+mbEzHv+UZb1WPToaj4rdfzfvv5suw/38KvixyAf4urTXqse85dZhdtNm+7zyPv02EB6Pb95/o8s8nZTuR7RsBu8DfLWfZf1TtJm33DEpfn71J7rme3F+XYKv+LX8blVP9+16/z1eBrXZq/c/PH5t30nrq6o92mw6dx3958t68D7AVx8t6/1gGn4cWeP+wbd5eoLH9+Av3i8jjrzbkx4j5r97/8Pj8Wf/jVe+dvnPQN1/8/cjPH5l76Phx5GlK+9xZPnOm6/F43vwZy6rtFlxf7fNhMqL/sPj1/X/GXys5IKPlVzwsZILPlZywcdKLvhYyQUfK7ngYyUXfKzkgo+VXPCxkgs+VnL5sf8HMPcYRU1/IswAAAAASUVORK5CYII="/>
+      </div>
+     
+      
+   </body>
+</html>

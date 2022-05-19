@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User Registration</title>
+</head>
+   <body>
+   <div align="center">
+      <h2>QR Generator </h2>
+      
+      <form  th:action="@{/qrGenerator}"  method="POST" th:object="${userQRRequest}">
+         <table>
+            <tr>
+               <td>URL</td>
+               <td><input type="text" th:field="*{url}" /></td>
+            </tr>
+          </table>
+          <button type="submit">Generate QR </button>  
+      </form>
+   </div>
+   </body>
+</html>

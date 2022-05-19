@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title>Successfully registered</title>
+      <style>
+        span {color: blue;}
+      </style>
+   </head>
+   
+   <body>
+   
+      <!-- Include _menu.html -->
+      <h2>QR code status </h2>
+      
+      <div th:if="${response != null}">
+         <ul>
+            <li>URL: <span th:utext="${response.userQrRequest.url}">..</span></li>
+            <li>Status: <span th:utext="${response.status}">..</span></li>
+         </ul>
+         <img  th:src="${image}"/>
+      </div>
+     
+      
+   </body>
+</html>
